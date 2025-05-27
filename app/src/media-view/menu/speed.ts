@@ -2,7 +2,7 @@ import type { MediaPlayerInstance } from "@vidstack/react";
 import type { MenuItem } from "obsidian";
 import { PlaybackSpeedPrompt } from "./prompt";
 
-export const speedOptions = [0.25, 0.5, 0.75, 1, 1.25, 1.5, 2, 3, 5, 10];
+export const speedOptions = [.25,.5,.8,1,1.2,1.5,2,2.5,3,3.5,4,6,8];
 
 export function speedMenu(item: MenuItem, player: MediaPlayerInstance) {
   const currentSpeed = player.state.playbackRate;
