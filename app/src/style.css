@@ -10,6 +10,16 @@
   background: linear-gradient(to bottom, transparent 0%, #22222290 100%);
 }
 
+.mx-speed-btns {
+  display: grid;
+  grid: none / repeat(7, 1fr);
+  gap: 2px;
+  max-width: 200px;
+  & > button:not(:hover) {
+    color: var(--text-faint);
+  }
+}
+
 svg.svg-icon {
   width: 100%;
   height: 100%;
@@ -310,7 +320,6 @@ textarea:not(.keep-ob) {
   font-weight: inherit; /* 1 */
   line-height: inherit; /* 1 */
   letter-spacing: inherit; /* 1 */
-  color: inherit; /* 1 */
   margin: 0; /* 2 */
   padding: 0; /* 3 */
 }
